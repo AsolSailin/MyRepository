@@ -20,6 +20,7 @@ namespace BARS_Task1
         public void Run()
         {
             char key = Console.ReadKey().KeyChar;
+            
             while (key != 'c')
             {
                 OnKeyPressed?.Invoke(this, key);
