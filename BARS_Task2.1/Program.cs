@@ -8,10 +8,10 @@ namespace BARS_Task2
 
         public static void Main(string[] args)
         {
-            var intLogger1 = new LocalFileLogger<int>(fileLocation);
-            intLogger1.LogInfo("LogInfo int test passed");
-            intLogger1.LogWarning("LogWarning int test passed");
-            intLogger1.LogError("LogWarning int test passed", new Exception("Exception int"));
+            var intLogger = new LocalFileLogger<int>(fileLocation);
+            intLogger.LogInfo("LogInfo int test passed");
+            intLogger.LogWarning("LogWarning int test passed");
+            intLogger.LogError("LogWarning int test passed", new Exception("Exception int"));
 
             var stringLogger = new LocalFileLogger<string>(fileLocation);
             stringLogger.LogInfo("LogInfo string test passed");
